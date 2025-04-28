@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Know Your Fan - eSports</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+        <div class="header">
+            <img src="./images/fundo-furia.png" alt="Logo Know Your Fan" class="logo">
+            <h2>Know Your Fan - Cadastro</h2>
+        </div>
+
+      <form id="fanForm">
+        <label>Nome:</label>
+        <input type="text" id="nome" required />
+
+        <label>Endereço:</label>
+        <input type="text" id="endereco" required />
+
+        <label>CPF:</label>
+        <input type="text" id="cpf" required />
+
+        <label>Interesses em eSports:</label>
+        <textarea
+          id="interesses"
+          required
+          placeholder="Ex: CS:GO, Valorant, FURIA, etc."
+        ></textarea>
+
+        <label>Eventos e Compras no último ano:</label>
+        <textarea
+          id="eventos"
+          required
+          placeholder="Ex: Comprei ingresso para IEM Rio, Merchandise da FURIA..."
+        ></textarea>
+
+        <label>Upload de Documento (simulado):</label>
+        <input
+          type="file"
+          id="documento"
+          accept=".jpg,.jpeg,.png,.pdf"
+          required
+        />
+
+        <label>Link do seu perfil de rede social:</label>
+        <input
+          type="url"
+          id="socialLink"
+          placeholder="https://instagram.com/seuperfil"
+          required
+        />
+
+        <label>Link de perfil em site de eSports:</label>
+        <input
+          type="url"
+          id="esportsLink"
+          placeholder="https://hltv.org/user/seuperfil"
+          required
+        />
+
+        <button type="submit">Enviar</button>
+      </form>
+
+      <div id="result" class="result" style="display: none"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
